@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
+  <head>
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
   <body>
     <nav id="navbar">
       <header>JavaScript Documentation</header>
-      <div class="navbar-item">
-          <ul>
-        <a rel="internal" class="nav-link" href="#Introduction"
+      <ul>
+        <li><a rel="internal" class="nav-link" href="#Introduction"
             >Introduction</a
-          >
-      </div>
-      <div class="navbar-item">
-        <a rel="internal" class="nav-link" href="#JavaScript_and_Java"
+          ></li>
+        <li><a rel="internal" class="nav-link" href="#JavaScript_and_Java"
             >JavaScript and Java</a
-          >
-      </div>
-      <div class="navbar-item">
-          <a rel="internal" class="nav-link" href="#Hello_World"
+          ></li>
+        <li><a rel="internal" class="nav-link" href="#Hello_World"
             >Hello World</a
-          >
-      
-      </div>
-      <div class="navbar-item">
-    
-        <a rel="internal" class="nav-link" href="#Declaring_Variables"
-            >Declaring variables</a
-          >
-      </div>
-
-      <div class="navbar-item">
-    
-        <a rel="internal" class="nav-link" href="#Variable_Scope"
+          ></li>
+        <li><a rel="internal" class="nav-link" href="#Declaring_Variables"
+            >Declaring Variables</a
+          ></li>
+        <li><a rel="internal" class="nav-link" href="#Variable_Scope"
             >Variable Scopes</a
-          >
-        </ul>
+          ></li>
+        <li><a rel="internal" class="nav-link" href="#Global_Variables"
+            >Global Variables</a
+          ></li>
+      </ul>
       </div>
     </nav>
 
@@ -61,7 +53,7 @@
               </li>
           <li class="list-item">  Server-side JavaScript extends the core language by supplying
             objects relevant to running JavaScript on a server. 
-     </li>
+        </li>
           <li class="list-item"> For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, 
             or perform file manipulations on a server.</li>
           <li class="list-item">from one invocation to another of the application, or perform file manipulations on a server.</li>
@@ -84,36 +76,16 @@
       </section>
 
       <section class="main-section" id="Hello_World">
-        <header class="section-header">Hello world</header>
+        <header class="section-header">Hello World</header>
         <p class="paragraph">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
 
         <code class="code">function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");</code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
+            greetMe("World");
+        </code>
       </section>
 
       <section class="main-section" id="Declaring_Variables">
-        <header class="section-header">Declaring variables</header>
+        <header class="section-header">Declaring Variables</header>
         <p class="paragraph">You can declare a variable in three ways:
             With the keyword var. For example,</p>
             <code class="code">var x = 42.</code>
@@ -129,8 +101,8 @@
             <code class="code"> let y = 13.</code>
       </section>
 
-      <section class="main-section" id="Variable_Scope">
-        <header class="section-header">Variable scope</header>
+      <section class="main-section" id="Variable_Scopes">
+        <header class="section-header">Variable Scopes</header>
         <p class="paragraph">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
         <p class="paragraph">JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
         <code class="code">if (true) { var x = 5; } console.log(x); // 5</code>
@@ -143,7 +115,7 @@
       </section>
 
       <section class="main-section" id="Global_Variables">
-        <header class="section-header">Global variables</header>
+        <header class="section-header">Global Variables</header>
         <p class="paragraph">Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
         <p class="paragraph">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
         </p>
