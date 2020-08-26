@@ -5,42 +5,87 @@
     <nav id="navbar">
       <header>JavaScript Documentation</header>
       <div class="navbar-item">
-        <h2></h2>
+          <ul>
+        <a rel="internal" class="nav-link" href="#Introduction"
+            >Introduction</a
+          >
       </div>
       <div class="navbar-item">
-        <h2>
-          <a class="nav-link" href="#JavaScript_and_Java"
+        <a rel="internal" class="nav-link" href="#JavaScript_and_Java"
             >JavaScript and Java</a
           >
-        </h2>
       </div>
       <div class="navbar-item">
-        <h2>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+          <a rel="internal" class="nav-link" href="#Hello_World"
+            >Hello World</a
           >
-        </h2>
+      
       </div>
       <div class="navbar-item">
-        <h2>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+    
+        <a rel="internal" class="nav-link" href="#Declaring_Variables"
+            >Declaring variables</a
           >
-        </h2>
       </div>
+
       <div class="navbar-item">
-        <h2>
-          <a class="nav-link" href="#JavaScript_and_Java"
-            >JavaScript and Java</a
+    
+        <a rel="internal" class="nav-link" href="#Variable_Scope"
+            >Variable Scopes</a
           >
-        </h2>
+        </ul>
       </div>
     </nav>
 
     <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header class="section-header">Introduction</header>
+        <p class="paragraph">JavaScript is a cross-platform, object-oriented 
+            scripting language. It is a small and lightweight language. 
+            Inside a host environment (for example, a web browser), 
+            JavaScript can be connected to the objects of its
+            environment to provide programmatic control over them.</p>
+        <p class="paragraph">JavaScript contains a standard library of objects, 
+            such as Array, Date, and Math, and a core set of language elements such as operators, 
+            control structures, and statements. 
+            Core JavaScript can be extended for a variety of purposes 
+            by supplementing it with additional objects; for example:</p>
+
+        <ul class="list-container">
+          <li class="list-item">Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM).
+            
+          </li>
+          <li class="list-item">For example, client-side extensions allow an application 
+            to place elements on an HTML form and respond to user events such as mouse clicks, 
+            form input, and page navigation
+              </li>
+          <li class="list-item">  Server-side JavaScript extends the core language by supplying
+            objects relevant to running JavaScript on a server. 
+     </li>
+          <li class="list-item"> For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, 
+            or perform file manipulations on a server.</li>
+          <li class="list-item">from one invocation to another of the application, or perform file manipulations on a server.</li>
+        </ul>
+      </section>
+
       <section class="main-section" id="JavaScript_and_Java">
         <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
+        <p class="paragraph">JavaScript and Java are similar in some ways but fundamentally different in some others.</p>
+        <p class="paragraph">The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.</p>
+        <p class="paragraph">In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values.</p>
+        <p class="paragraph">JavaScript has a prototype-based object model instead of the more common class-based object model. </p>
+        <p class="paragraph">The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects.</p>
+        <p class="paragraph">JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.</p>
+        <p class="paragraph">JavaScript is a very free-form language compared to Java.</p>
+        <p class="paragraph"> You do not have to declare all variables, classes, and methods.</p>
+        <p class="paragraph">You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces.</p>
+        <p class="paragraph">Variables, parameters, and function return types are not explicitly typed.</p>
+
+      </section>
+
+      <section class="main-section" id="Hello_World">
+        <header class="section-header">Hello world</header>
+        <p class="paragraph">To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
         <p class="paragraph"></p>
         <p class="paragraph"></p>
         <p class="paragraph"></p>
@@ -51,7 +96,8 @@
         <p class="paragraph"></p>
         <p class="paragraph"></p>
 
-        <code class="code"></code>
+        <code class="code">function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code>
         <code class="code"></code>
         <code class="code"></code>
         <code class="code"></code>
@@ -66,144 +112,41 @@
         </ul>
       </section>
 
-      <section class="main-section" id="JavaScript_and_Java">
-        <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
+      <section class="main-section" id="Declaring_Variables">
+        <header class="section-header">Declaring variables</header>
+        <p class="paragraph">You can declare a variable in three ways:
+            With the keyword var. For example,</p>
+            <code class="code">var x = 42.</code>
 
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
+        <p class="paragraph">This syntax can be used to declare both local and global variables.
 
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
+            By simply assigning it a value. For example,</p>
+            <code class="code">var x = 42.</code>
+
+        <p class="paragraph">This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+
+            With the keyword let. For example,</p>
+            <code class="code"> let y = 13.</code>
       </section>
 
-      <section class="main-section" id="JavaScript_and_Java">
-        <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
+      <section class="main-section" id="Variable_Scope">
+        <header class="section-header">Variable scope</header>
+        <p class="paragraph">When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
+        <p class="paragraph">JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
+        <code class="code">if (true) { var x = 5; } console.log(x); // 5</code>
 
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
+        <p class="paragraph">This behavior changes, when using the let declaration introduced in ECMAScript 2015.
 
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
+        </p>
+        <code class="code">if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+            defined</code>
       </section>
 
-      <section class="main-section" id="JavaScript_and_Java">
-        <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
-      </section>
-
-      <section class="main-section" id="JavaScript_and_Java">
-        <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
-      </section>
-
-      <section class="main-section" id="JavaScript_and_Java">
-        <header class="section-header">JavaScript and Java</header>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-        <p class="paragraph"></p>
-
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-        <code class="code"></code>
-
-        <ul class="list-container">
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-          <li class="list-item"></li>
-        </ul>
+      <section class="main-section" id="Global_Variables">
+        <header class="section-header">Global variables</header>
+        <p class="paragraph">Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
+        <p class="paragraph">Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+        </p>
       </section>
     </main>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
